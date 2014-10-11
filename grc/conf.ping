@@ -24,7 +24,7 @@ regexp=\d+\sms
 colours=green
 ======
 # time
-regexp=time=
+regexp=(time=|icmp_seq=|ttl=)
 colours=yellow
 =======
 # DUP
@@ -38,4 +38,12 @@ colours=yellow
 # unknown host
 regexp=.+unknown\shost\s(.+)
 colours=red,bold red
+=======
+# number
+regexp=\d+\s
+colours=green
+=======
+# time
+regexp=\d+\.\d+
+colours=green
 

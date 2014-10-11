@@ -25,11 +25,11 @@ regexp=\d+(\.\d+)?\s(T|G|M|K)iB
 colours=yellow
 =======
 # interface
-regexp=(([a-z]{3}\d)|(lo\d)|(en\d)|(bridge\d)|(utun\d)|(p2p\d)):
+regexp=(([a-z]{3,7}\d)|(lo\d)|(en\d)|(bridge\d)|(utun\d)|(p2p\d)):
 colours=green
 =======
 #ip disc
-regexp=(inet\d?|netmask|broadcast)
+regexp=(inet\d?|netmask|broadcast|ether|media|status|nd6|member|options|flags)
 colours=cyan
 =======
 #flags

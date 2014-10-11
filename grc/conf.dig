@@ -8,26 +8,26 @@
 #
 
 # domain
-regexp=(\ |\t|^)[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,62}?\.
+regexp=(\ |\t|^)[a-zA-Z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-zA-Z0-9]{2,62}?\.
 #([a-zA-Z]+\.)+(com|org|net|edu)
 colours=magenta
 =======
 # hostname
-regexp=(\ |\t|^)[a-z]{2,62}?\.
+regexp=(\ |\t|^)[a-zA-Z0-9]{2,62}?\.
 #([a-zA-Z]+\.)+(com|org|net|edu)
 colours=magenta
 =======
+# number
+regexp=(\t|\s)(\d+)(\t|\s|$)(\d+)?
+colours=blue
+=======
 # dns result
-regexp=((\d+\s){0,1}IN)?\s(AAAA|A|AFSDB|APL|CERT|CNAME|DHCID|DLV|DNAME|DNSKEY|DS|HIP|IPSECKEY|KEY|KX|LOC|MX|NAPTR|NSEC3PARAM|NSEC3|NSEC|NS|PTR|RRSIG|RP|SIG|SOA|SPF|SRV|SSHFP|TA|TKEY|TSIG|TXT)
+regexp=((\d+\s){0,1}IN)?\s(AAAA|A|AFSDB|APL|CERT|CNAME|DHCID|DLV|DNAME|DNSKEY|DS|HIP|IPSECKEY|KEY|KX|LOC|MX|NAPTR|NSEC3PARAM|NSEC3|NSEC|NS|PTR|RRSIG|RP|SIG|SOA|SPF|SRV|SSHFP|TA|TKEY|TSIG|TXT|TYPE(\d+))
 colours=green
 =======
 # ipv6 number
 regexp=(([0-9a-fA-F]{1,4})?\:\:?[0-9a-fA-F]{1,4})+
 colours=magenta
-=======
-# number
-regexp=(\d+)(\t|\s)(\d+)?
-colours=blue
 =======
 # date/time
 regexp=(Mon|Tue|Wed|Thu|Fri|Sat|Sun)\s(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s([\d]{2})\s([\d]{2}:[\d]{2}:[\d]{2}).*\s([\d]{4})
