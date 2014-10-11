@@ -156,12 +156,8 @@ mgmt1.tor.ardns.local           rsync=macbook-air.benohara.net
 stealth1.stag.arsrs.local       rsync=macbook-air.benohara.net
 stealth1.mel.arsrs.local        rsync=macbook-air.benohara.net
 stealth2.mel.arsrs.local        rsync=macbook-air.benohara.net
-stealth3.mel.arsrs.local        rsync=macbook-air.benohara.net
-stealth4.mel.arsrs.local        rsync=macbook-air.benohara.net
 stealth1.syd.arsrs.local        rsync=macbook-air.benohara.net
 stealth2.syd.arsrs.local        rsync=macbook-air.benohara.net
-stealth3.syd.arsrs.local        rsync=macbook-air.benohara.net
-stealth4.syd.arsrs.local        rsync=macbook-air.benohara.net
 build1.mel.arsrs.local          rsync=macbook-air.benohara.net
 office-backup.stkildard.vic.ausregistry.com.au  rsync=macbook-air.benohara.net
 backup1.office.arsrs.local      rsync=macbook-air.benohara.net
@@ -170,10 +166,6 @@ db2.mel.arsrs.local             rsync=macbook-air.benohara.net
 db3.mel.arsrs.local             rsync=macbook-air.benohara.net
 dnsstats1.mel.arsrs.local       rsync=macbook-air.benohara.net
 dnsstats2.mel.arsrs.local       rsync=macbook-air.benohara.net
-dnsstats3.mel.arsrs.local       rsync=macbook-air.benohara.net
-dnsstats1.syd.arsrs.local       rsync=macbook-air.benohara.net
-dnsstats2.syd.arsrs.local       rsync=macbook-air.benohara.net
-dnsstats3.syd.arsrs.local       rsync=macbook-air.benohara.net
 webdns1.mel.arsrs.local         rsync=macbook-air.benohara.net
 webdns2.mel.arsrs.local         rsync=macbook-air.benohara.net
 webdns1.syd.arsrs.local         rsync=macbook-air.benohara.net
@@ -200,7 +192,7 @@ dns1.stag.ardns.local           rsync=macbook-air.benohara.net
 backup1.mel.arsrs.local         rsync=macbook-air.benohara.net
 backup1.syd.arsrs.local         rsync=macbook-air.benohara.net
 psg-apps.stkildard.vic.ausregistry.com.au  rsync=macbook-air.benohara.net
-ldap2.burnleyst.vic.ausregistry.com.au     rsync=macbook-air.benohara.net
+ldap2.burnleyst.vic.ausregistry.com.au     rsync=macbook-air.benohara.net files=ssh
 au-epp1.stag.arsrs.local        rsync=macbook-air.benohara.net
 au-whois.stag.arsrs.local       rsync=macbook-air.benohara.net
 au-epp1.mel.arsrs.local         rsync=macbook-air.benohara.net
@@ -271,26 +263,45 @@ whois1.stag.arsrs.local         rsync=macbook-air.benohara.net
 ote-orer-web1.mel.arsrs.local   rsync=macbook-air.benohara.net
 confluence1.office.arsrs.local  rsync=macbook-air.benohara.net
 docker1.stag.arsrs.local        rsync=macbook-air.benohara.net
-dev-cer-ci1.stkildard.vic.ausregistry.com.au    rsync=macbook-air.benohara.net
-dev-app1.stkildard.vic.ausregistry.com.au       rsync=macbook-air.benohara.net
-dev-app2.stkildard.vic.ausregistry.com.au       rsync=macbook-air.benohara.net
-dev-cer-testing2.stkildard.vic.ausregistry.com.au   rsync=macbook-air.benohara.net
-dev-cer-ci1.stkildard.vic.ausregistry.com.au    rsync=macbook-air.benohara.net
-dev-rhel6-showcase.stkildard.vic.ausregistry.com.au rsync=macbook-air.benohara.net
-dev-orer-testing1.stkildard.vic.ausregistry.com.au  rsync=macbook-air.benohara.net
-dev-vm1.stkildard.vic.ausregistry.com.au        rsync=macbook-air.benohara.net
-dev-vm2.stkildard.vic.ausregistry.com.au        rsync=macbook-air.benohara.net
-dev-util-linux1.stkildard.vic.ausregistry.com.au    rsync=macbook-air.benohara.net
-dev-dnrs-registry.stkildard.vic.ausregistry.com.au  rsync=macbook-air.benohara.net
-dev-cer-ci-desktop.stkildard.vic.ausregistry.com.au rsync=macbook-air.benohara.net
-dev-mingle.stkildard.vic.ausregistry.com.au     rsync=macbook-air.benohara.net
-dev-dnrs-eppclient.stkildard.vic.ausregistry.com.au rsync=macbook-air.benohara.net
-dev-cer-ci-dt1.stkildard.vic.ausregistry.com.au     rsync=macbook-air.benohara.net
-dev-cer-ci-dt2.stkildard.vic.ausregistry.com.au     rsync=macbook-air.benohara.net
-dev-cer-ci-dt3.stkildard.vic.ausregistry.com.au     rsync=macbook-air.benohara.net
-dev-db1.stkildard.vic.ausregistry.com.au    rsync=macbook-air.benohara.net
-dev-db2.stkildard.vic.ausregistry.com.au    rsync=macbook-air.benohara.net
-dev-dnrs-dev1.stkildard.vic.ausregistry.com.au  rsync=macbook-air.benohara.net
+dev-app1.stkildard.vic.ausregistry.com.au       rsync=macbook-air.benohara.net files=ssh
+dev-app2.stkildard.vic.ausregistry.com.au       rsync=macbook-air.benohara.net files=ssh
+dev-dnrs-testing5.stkildard.vic.ausregistry.com.au   rsync=macbook-air.benohara.net files=ssh
+dev-dnrs-testing-au.stkildard.vic.ausregistry.com.au   rsync=macbook-air.benohara.net files=ssh
+dev-docker-ci1.stkildard.vic.ausregistry.com.au   rsync=macbook-air.benohara.net files=ssh
+dev-num-testing1.stkildard.vic.ausregistry.com.au   rsync=macbook-air.benohara.net files=ssh
+dev-occ.stkildard.vic.ausregistry.com.au   rsync=macbook-air.benohara.net files=ssh
+dev-cer-testing1.stkildard.vic.ausregistry.com.au   rsync=macbook-air.benohara.net files=ssh
+dev-cer-testing4.stkildard.vic.ausregistry.com.au   rsync=macbook-air.benohara.net files=ssh
+dev-dnrs-old-ci1.stkildard.vic.ausregistry.com.au    rsync=macbook-air.benohara.net files=ssh
+dev-dnrs-ci1.stkildard.vic.ausregistry.com.au    rsync=macbook-air.benohara.net files=ssh
+dev-dnrs-ci2.stkildard.vic.ausregistry.com.au    rsync=macbook-air.benohara.net files=ssh
+dev-dnrs-ci3.stkildard.vic.ausregistry.com.au    rsync=macbook-air.benohara.net files=ssh
+dev-dnrs-ci1-db1.stkildard.vic.ausregistry.com.au    rsync=macbook-air.benohara.net files=ssh
+dev-ci1.stkildard.vic.ausregistry.com.au    rsync=macbook-air.benohara.net files=ssh
+dev-rhel6-showcase.stkildard.vic.ausregistry.com.au rsync=macbook-air.benohara.net files=ssh
+dev-orer-testing1.stkildard.vic.ausregistry.com.au  rsync=macbook-air.benohara.net files=ssh
+dev-orer-ci1.stkildard.vic.ausregistry.com.au  rsync=macbook-air.benohara.net files=ssh
+dev-orer-dev1.stkildard.vic.ausregistry.com.au  rsync=macbook-air.benohara.net files=ssh
+dev-orer-showcase.stkildard.vic.ausregistry.com.au  rsync=macbook-air.benohara.net files=ssh
+dev-orer-storytest.stkildard.vic.ausregistry.com.au  rsync=macbook-air.benohara.net files=ssh
+dev-vm1.stkildard.vic.ausregistry.com.au        rsync=macbook-air.benohara.net files=ssh
+dev-vm2.stkildard.vic.ausregistry.com.au        rsync=macbook-air.benohara.net files=ssh
+dev-util-linux1.stkildard.vic.ausregistry.com.au    rsync=macbook-air.benohara.net files=ssh
+dev-robohelp.stkildard.vic.ausregistry.com.au    rsync=macbook-air.benohara.net files=ssh
+dev-dnrs-registry.stkildard.vic.ausregistry.com.au  rsync=macbook-air.benohara.net files=ssh
+dev-cer-ci-desktop.stkildard.vic.ausregistry.com.au rsync=macbook-air.benohara.net files=ssh
+dev-mingle.stkildard.vic.ausregistry.com.au     rsync=macbook-air.benohara.net files=ssh
+dev-dnrs-epp.stkildard.vic.ausregistry.com.au rsync=macbook-air.benohara.net files=ssh
+dev-dnrs-eppclient.stkildard.vic.ausregistry.com.au rsync=macbook-air.benohara.net files=ssh
+dev-cer-ci-dt1.stkildard.vic.ausregistry.com.au     rsync=macbook-air.benohara.net files=ssh
+dev-cer-ci-dt2.stkildard.vic.ausregistry.com.au     rsync=macbook-air.benohara.net files=ssh
+dev-cer-ci-dt3.stkildard.vic.ausregistry.com.au     rsync=macbook-air.benohara.net files=ssh
+dev-db1.stkildard.vic.ausregistry.com.au    rsync=macbook-air.benohara.net files=ssh
+dev-db2.stkildard.vic.ausregistry.com.au    rsync=macbook-air.benohara.net files=ssh
+dev-dnrs-dev1.stkildard.vic.ausregistry.com.au  rsync=macbook-air.benohara.net files=ssh
+dev-cer-showcase1.stkildard.vic.ausregistry.com.au  rsync=macbook-air.benohara.net files=ssh
+dev-cer-showcase2.stkildard.vic.ausregistry.com.au  rsync=macbook-air.benohara.net files=ssh
+dev-cer-sonar1.stkildard.vic.ausregistry.com.au  rsync=macbook-air.benohara.net files=ssh
 jira-test.stag.arsrs.local      rsync=macbook-air.benohara.net
 ops1.office.arsrs.local         rsync=macbook-air.benohara.net
 cer-web1.mel.arsrs.local        rsync=macbook-air.benohara.net
@@ -301,6 +312,5 @@ cer-ote1.mel.arsrs.local        rsync=macbook-air.benohara.net
 cer-ote2.mel.arsrs.local        rsync=macbook-air.benohara.net
 cer-ote1.syd.arsrs.local        rsync=macbook-air.benohara.net
 cer-ote2.syd.arsrs.local        rsync=macbook-air.benohara.net
-
 [endhosts]
 
