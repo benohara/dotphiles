@@ -41,6 +41,7 @@ zstyle ':dotzsh:load' dzmodule \
   'rsync' \
   'grc' \
   'node' \
+  'docker' \
   'mercurial' \
   'notify' \
   'dotsync' \
@@ -48,6 +49,7 @@ zstyle ':dotzsh:load' dzmodule \
   'taskwarrior' \
   'vagrant' \
   'zaw' \
+  'bd' \
   'history-substring-search' \
   'theme'
 
