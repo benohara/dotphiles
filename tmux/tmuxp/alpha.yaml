@@ -3,9 +3,9 @@ start_directory: ~/ # load session relative to config location (project root).
 windows:
 - window_name: management
   shell_command_before:
-    - tmux link-window -s dns:amsterdam -t 2
-    - tmux link-window -s dns:amsterdam -t 3
-    - tmux link-window -s dns:amsterdam -t 4
-    - tmux link-window -s dns:amsterdam -t 5
+    - tmux link-window -s dns.anycast:amsterdam -t 2
+    - tmux link-window -s dns.anycast:madrid -t 3
+    - tmux link-window -s dns.anycast:toronto -t 4
+    - tmux link-window -s dns.anycast:melbourne -t 5
   panes:
       - ssh mgmt1.syd.ardns.local

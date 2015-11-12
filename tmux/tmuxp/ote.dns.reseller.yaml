@@ -1,13 +1,13 @@
-session_name: puppet
+session_name: ote.dns.reseller
 start_directory: ~/ # load session relative to config location (project root).
 windows:
 - window_name: melbourne
   focus: True
   layout: tiled
   panes:
-  - ssh puppet1.mel.arsrs.local
+    - ssh ote-reseller1.mel.arsrs.local
 - window_name: sydney
   layout: tiled
   panes:
-  - ssh puppet1.syd.arsrs.local
+    - ssh ote-reseller1.syd.arsrs.local
 

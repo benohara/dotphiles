@@ -1,0 +1,10 @@
+session_name: staging.dns.stealth
+start_directory: ~/ # load session relative to config location (project root).
+windows:
+- window_name: staging
+  focus: True
+  layout: tiled
+  panes:
+  - ssh stealth1.stag.arsrs.local
+  - ssh stealth2.stag.arsrs.local
+

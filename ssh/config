@@ -27,7 +27,7 @@ Host localhost 127.0.0.1
     DynamicForward 5555
 
 # Work machines
-Host *.arsrs.local *.ardns.local *.ausregistry.com.au *.office *.ausregistrygroup.local desktop-vm *.vic.ausregistry.com.au *.stkildard.vic.ausregistry.com.au
+Host *.arsrs.local *.ardns.local *.ausregistry.com.au *.office *.ausregistrygroup.local desktop-vm *.vic.ausregistry.com.au *.stkildard.vic.ausregistry.com.au akl *.ams *.aws *.bne *.bog *.hkg *.ist *.jbo *.mad *.mel *.mia *.nbo *.per *.sao *.sjc *.stag *.sto *.syd *.tky *.tor
     User ben.ohara
     IdentityFile ~/.ssh/id_rsa.work
 
@@ -35,6 +35,16 @@ Host *.arsrs.local *.ardns.local *.ausregistry.com.au *.office *.ausregistrygrou
 Host *.ring.nlnog.net
     User ausregistry
     IdentityFile ~/.ssh/id_rsa.work
+
+Host jump
+    User ben.ohara
+    HostName jump.arsrs.local
+    IdentityFile ~/.ssh/id_rsa.work
+    #PermitLocalCommand yes
+    #LocalCommand ssh -f %r@%h -o RemoteForward="10000 localhost:22" -o ForwardAgent=yes -p %p sshfs -p 10000 %u@localhost:%d/Projects Projects2
+
+Host epp1.mel.arsrs.local
+    ProxyCommand ssh -W %h:%p jump1.mel.arsrs.local
 
 # Default
 Host *
@@ -45,5 +55,7 @@ Host *
     KeepAlive yes
     ControlMaster auto
     ControlPath ~/.ssh/master/%r@%h:%p
-    ControlPersist 8h
+    ControlPersist 2h
+    PubkeyAuthentication yes
+    Protocol 2
 

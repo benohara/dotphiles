@@ -1,0 +1,12 @@
+session_name: au.ote
+start_directory: ~/ # load session relative to config location (project root).
+windows:
+- window_name: ote-mel
+  layout: tiled
+  panes:
+    - ssh au-ote1.mel
+- window_name: ote-syd
+  layout: tiled
+  panes:
+    - ssh au-ote1.syd
+

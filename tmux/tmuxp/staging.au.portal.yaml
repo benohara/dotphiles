@@ -1,0 +1,12 @@
+session_name: staging.au.portal
+start_directory: ~/ # load session relative to config location (project root).
+windows:
+- window_name: staging
+  layout: tiled
+  panes:
+      - ssh au-web-app1.stag
+- window_name: staging-mgmt
+  layout: tiled
+  panes:
+      - ssh au-web-mgmt1.stag
+

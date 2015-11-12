@@ -1,0 +1,9 @@
+session_name: staging.gtld.registry
+start_directory: ~/ # load session relative to config location (project root).
+windows:
+- window_name: staging
+  focus: True
+  layout: tiled
+  panes:
+  - ssh registry1.stag.arsrs.local
+

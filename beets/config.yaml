@@ -8,7 +8,8 @@
 #
 
 # Store music in here
-directory: /Volumes/PORTABLE/Music/Library
+#directory: /Volumes/PORTABLE/Music/Library
+directory: /Users/bohara/Music/Traktor/Tracks
 
 # Set options for matching
 match:
@@ -33,8 +34,8 @@ item_fields:
 
 # Options for importing
 import:
-    copy: no
-    move: yes
+    copy: yes
+    move: no
     write: yes
     resume: ask
     quiet_fallback: skip

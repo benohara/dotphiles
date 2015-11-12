@@ -1,0 +1,10 @@
+session_name: staging.dns.anycast
+start_directory: ~/ # load session relative to config location (project root).
+windows:
+- window_name: staging
+  focus: True
+  layout: tiled
+  panes:
+  - ssh dns1.stag.ardns.local
+  - ssh dns2.stag.ardns.local
+

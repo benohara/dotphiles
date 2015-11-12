@@ -1,0 +1,25 @@
+session_name: vagrant
+start_directory: ~/Projects/AusRegistry/puppet # load session relative to config location (project root).
+windows:
+  - window_name: editor
+    focus: True
+    panes:
+      - vim
+  - window_name: vagrant-ssh
+    focus: True
+    layout: main-horizontal
+    panes:
+      - # empty
+      - # empty
+  - window_name: vagrant-provision
+    focus: True
+    layout: main-horizontal
+    panes:
+      - # empty
+      - # empty
+  - window_name: shell
+    focus: True
+    layout: main-horizontal
+    panes:
+      - # empty
+      - # empty

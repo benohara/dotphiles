@@ -1,11 +1,9 @@
-session_name: registry
+session_name: gtld.registry
 start_directory: ~/ # load session relative to config location (project root).
 windows:
 - window_name: melbourne
   focus: True
   layout: tiled
-  options:
-    allow-rename: off
   panes:
   - ssh registry1.mel.arsrs.local
   - ssh registry2.mel.arsrs.local
@@ -15,8 +13,6 @@ windows:
   - ssh registry6.mel.arsrs.local
 - window_name: sydney
   layout: tiled
-  options:
-    allow-rename: off
   panes:
   - ssh registry1.syd.arsrs.local
   - ssh registry2.syd.arsrs.local

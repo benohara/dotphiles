@@ -1,13 +1,15 @@
-session_name: puppet
+session_name: dns.reseller
 start_directory: ~/ # load session relative to config location (project root).
 windows:
 - window_name: melbourne
   focus: True
   layout: tiled
   panes:
-  - ssh puppet1.mel.arsrs.local
+  - ssh reseller1.mel.arsrs.local
+  - ssh reseller2.mel.arsrs.local
 - window_name: sydney
   layout: tiled
   panes:
-  - ssh puppet1.syd.arsrs.local
+  - ssh reseller1.syd.arsrs.local
+  - ssh reseller2.syd.arsrs.local
 

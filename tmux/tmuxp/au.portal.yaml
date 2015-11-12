@@ -1,13 +1,17 @@
-session_name: puppet
+session_name: au.portal
 start_directory: ~/ # load session relative to config location (project root).
 windows:
 - window_name: melbourne
   focus: True
   layout: tiled
   panes:
-  - ssh puppet1.mel.arsrs.local
+  - ssh au-web-app1.mel
+  - ssh au-web-app2.mel
+  - ssh au-web-app3.mel
 - window_name: sydney
   layout: tiled
   panes:
-  - ssh puppet1.syd.arsrs.local
+  - ssh au-web-app1.syd
+  - ssh au-web-app2.syd
+  - ssh au-web-app3.syd
 

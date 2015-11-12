@@ -28,4 +28,5 @@ mutt/smime/*
 mutt/certificates
 subversion/auth/
 task/*.data
+tmux/resurrect
 

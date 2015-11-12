@@ -1,0 +1,8 @@
+session_name: staging.au.ote
+start_directory: ~/ # load session relative to config location (project root).
+windows:
+- window_name: staging
+  layout: tiled
+  panes:
+    - ssh au-ote1.stag
+

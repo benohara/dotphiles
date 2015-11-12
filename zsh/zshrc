@@ -8,8 +8,8 @@
 #
 
 # debug: see with `dzinfo`
-zstyle ':dotzsh:load' timing 'yes'
-zstyle ':dotzsh:module:*' timing 'yes'
+zstyle ':dotzsh:load' timing 'no'
+zstyle ':dotzsh:module:*' timing 'no'
 
 # Set the Zsh modules to load (man zshmodules).
 zstyle ':dotzsh:load' zmodule 'stat'
@@ -34,6 +34,7 @@ zstyle ':dotzsh:load' dzmodule \
   'git' \
   'yum' \
   'tmux' \
+  'puppet' \
   'syntax-highlighting' \
   'perl' \
   'python' \
@@ -50,6 +51,7 @@ zstyle ':dotzsh:load' dzmodule \
   'vagrant' \
   'zaw' \
   'bd' \
+  'ruby' \
   'history-substring-search' \
   'theme'
 
@@ -116,7 +118,8 @@ zstyle ':dotzsh:module:ssh:aliases' hosts 'yes'
 # Auto start a session when Zsh is launched.
 # Setting it to 'local' only starts a session for local terminals.
 # Setting it to 'remote' only starts a session for SSH connections.
-##zstyle ':dotzsh:module:tmux' auto-start 'no'
+zstyle ':dotzsh:module:tmux' auto-start 'no'
+zstyle ':dotzsh:module:tmux' auto-session-name 'work'
 zstyle ':dotzsh:module:tmux:aliases' tmuxinator 'yes'
 
 ### Syntax Highlighting module
@@ -134,6 +137,10 @@ zstyle ':dotzsh:module:theme:hostname:macbook-air.benohara.net' theme 'dotphiles
 zstyle ':dotzsh:module:theme:domain:benohara.net' theme 'dotphiles' 'base16-default.dark' 'orange'
 #Work desktop
 zstyle ':dotzsh:module:theme:hostname:desktop-vm' theme 'dotphiles' 'base16-default.dark' 'blue'
+zstyle ':dotzsh:module:theme:hostname:*ote*' theme 'dotphiles' 'base16-default.dark' 'orange'
+zstyle ':dotzsh:module:theme:domain:stag.arsrs.local' theme 'dotphiles' 'base16-default.dark' 'green'
+zstyle ':dotzsh:module:theme:domain:arsrs.local' theme 'dotphiles' 'base16-default.dark' 'red'
+zstyle ':dotzsh:module:theme:domain:ardns.local' theme 'dotphiles' 'base16-default.dark' 'red'
 
 ### Load dotzsh
 source "$DOTZSH/init.zsh"
@@ -142,3 +149,7 @@ source "$DOTZSH/init.zsh"
 export PROJECT_HOME="$HOME/Projects"
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+#alias jump="ssh jump -t tmux a"
