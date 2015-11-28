@@ -8,6 +8,7 @@
 #
 
 # Global Config
+
 [user]
     name = Ben O'Hara
     email = "bohara@gmail.com"
@@ -150,4 +151,5 @@
     insteadof = arsgit:
 [url "bohara@home.benohara.net:~/Projects/git-repos/"]
     insteadof = homegit:
-
+[include]
+    path = ~/.gitconfig.local

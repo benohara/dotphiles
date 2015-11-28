@@ -1,0 +1,14 @@
+#
+# dotphiles : https://github.com/dotphiles/dotphiles
+#
+# Git configuration.
+#
+# Authors:
+#   Ben O'Hara <bohara@gmail.com>
+#
+#
+[user]
+    email = "ben.ohara@neustar.biz"
+    signingkey = D35FADEE
+
+
