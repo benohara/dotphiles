@@ -153,3 +153,5 @@ export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 #alias jump="ssh jump -t tmux a"
+
+test -e ${HOME}/.zsh/modules/terminal/iterm2_shell_integration.zsh && source ${HOME}/.zsh/modules/terminal/iterm2_shell_integration.zsh

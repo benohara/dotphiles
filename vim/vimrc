@@ -18,7 +18,6 @@ if has("user_commands")
   "let g:vundles=['general', 'git', 'hg', 'programming', 'completion', 'ruby', 'python', 'misc']
   "let g:vundles=['general', 'python', 'programming', 'git', 'completion']
   let g:vundles=['general', 'python', 'programming', 'git']
-  let g:neocomplcache_enable_at_startup = 1
   " Load 'vundles'
   source ~/.vim/vundles.vim
   " Add extra bundles here...
@@ -42,33 +41,9 @@ File     'AusRegistry/notify/config.py'                       , 'config.py'
 Project  'Personal/containrs2'
 
 let g:syntastic_html_tidy_ignore_errors= ["proprietary attribute \"autofocus", "proprietary attribute \"ui-", "proprietary attribute \"ng-", "<form> proprietary attribute \"novalidate\"", "<form> lacks \"action\" attribute", "trimming empty <span>", "<input> proprietary attribute \"autofocus\"", "unescaped & which should be written as &amp;", "inserting implicit <span>", "<input> proprietary attribute \"required\"", "trimming empty <select>", "trimming empty <button>", "<img> lacks \"src\" attribute", "plain text isn't allowed in <head> elements", "<html> proprietary attribute \"app\"", "<link> escaping malformed URI reference", "</head> isn't allowed in <body> elements", "<script> escaping malformed URI reference", "discarding unexpected <body>", "'<' + '/' + letter not allowed here", "missing </script>", "proprietary attribute \"autocomplete\"", "trimming empty <i>", "proprietary attribute \"required\"", "proprietary attribute \"placeholder\"", "<ng-include> is not recognized!", "discarding unexpected <ng-include>", "missing </button>", "replacing unexpected button by </button>", "<ey-confirm> is not recognized!", "discarding unexpected <ey-confirm>", "discarding unexpected </ey-confirm>", "discarding unexpected </ng-include>"]
-
-" === neocompletecache
-let g:neocomplcache_enable_at_startup = 1
-
-" ==== neosnippet
-" Plugin key-mappings.
-imap <C-k>     <Plug>(neosnippet_expand_or_jump)
-smap <C-k>     <Plug>(neosnippet_expand_or_jump)
-
-" SuperTab like snippets behavior.
-imap <expr><TAB> neosnippet#expandable() ? "\<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "\<C-n>" : "\<TAB>"
-smap <expr><TAB> neosnippet#expandable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-
-" For snippet_complete marker.
-if has('conceal')
-  set conceallevel=2 concealcursor=i
-endif
-
 let g:syntastic_java_javac_classpath = '/Users/bohara/Projects/AusRegistry/dnrs/registry/src/main/java'
 let g:syntastic_enable_signs=0
 
-Bundle 'mhinz/vim-rfc'
-Bundle 'vim-scripts/rfc-syntax'
-Bundle 'gilsondev/searchtasks.vim'
-Bundle 'idanarye/vim-merginal'
-
-Bundle 'szw/vim-ctrlspace' 
 set hidden
 let g:CtrlSpaceFileEngine = "file_engine_darwin_amd64"
-
+nmap <buffer> - <Plug>VinegarUp

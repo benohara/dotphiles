@@ -13,42 +13,49 @@ ForwardAgent yes
 HashKnownHosts no
 #ConnectTimeout 2
 SendEnv LC_TERM_PROGRAM LC_TERM_PROFILE
+Compression yes
 
 # My Hosts
 Host home home.benohara.net
-    Hostname home.benohara.net
+  User bohara
+  Hostname home.benohara.net
 Host mac-mini mac-mini.benohara.net
-    Hostname mac-mini.local
+  User bohara
+  Hostname mac-mini.local
 
 # Local development
 Host localhost 127.0.0.1
-    UserKnownHostsFile /dev/null
-    StrictHostKeyChecking no
-    DynamicForward 5555
-
-# Work machines
-Host *.arsrs.local *.ardns.local *.ausregistry.com.au *.office *.ausregistrygroup.local desktop-vm *.vic.ausregistry.com.au *.stkildard.vic.ausregistry.com.au akl *.ams *.aws *.bne *.bog *.hkg *.ist *.jbo *.mad *.mel *.mia *.nbo *.per *.sao *.sjc *.stag *.sto *.syd *.tky *.tor
-    User ben.ohara
-    IdentityFile ~/.ssh/id_rsa.work
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  DynamicForward 5555
 
 # NLNOG Ring
 Host *.ring.nlnog.net
-    User ausregistry
-    IdentityFile ~/.ssh/id_rsa.work
+  User ausregistry
 
 Host jump
-    User ben.ohara
-    HostName jump.arsrs.local
-    IdentityFile ~/.ssh/id_rsa.work
-    #PermitLocalCommand yes
-    #LocalCommand ssh -f %r@%h -o RemoteForward="10000 localhost:22" -o ForwardAgent=yes -p %p sshfs -p 10000 %u@localhost:%d/Projects Projects2
+  HostName jump.arsrs.local
+  #PermitLocalCommand yes
+  #LocalCommand ssh -f %r@%h -o RemoteForward="10000 localhost:22" -o ForwardAgent=yes -p %p sshfs -p 10000 %u@localhost:%d/Projects Projects2
+  DynamicForward 4321
 
-Host epp1.mel.arsrs.local
-    ProxyCommand ssh -W %h:%p jump1.mel.arsrs.local
+Host jumpden
+  User bohara
+  ProxyCommand ssh -vvv -W ben.ohara@mgmt1.den.reg.neustar.com:%p nsrjump
+
+Host derevprvjmp1 derevprvjmp1.de.neustar.com jump.reg jump.reg.neustar.com nsrjump
+  User bohara
+  IdentityFile ~/.ssh/id_rsa.work
+  Hostname jump.reg.neustar.com
+  DynamicForward 4322
+
+# Work machines
+Host *.reg.neustar.com *.den *.ash
+    User ben.ohara
 
 # Default
 Host *
-    User bohara
+    User ben.ohara
     StrictHostKeyChecking ask
     ServerAliveCountMax 6
     ServerAliveInterval 30
