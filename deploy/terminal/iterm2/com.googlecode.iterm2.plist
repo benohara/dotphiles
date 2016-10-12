@@ -9,7 +9,9 @@
 	<key>AdjustWindowForFontSizeChange</key>
 	<true/>
 	<key>AllowClipboardAccess</key>
-	<false/>
+	<true/>
+	<key>AlternateMouseScroll</key>
+	<true/>
 	<key>AnimateDimming</key>
 	<false/>
 	<key>AppleAntiAliasingThreshold</key>
@@ -18,6 +20,8 @@
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
 	<integer>1</integer>
+	<key>AutoCommandHistory</key>
+	<false/>
 	<key>AutoHideTmuxClientSession</key>
 	<true/>
 	<key>CheckTestRelease</key>
@@ -5290,12 +5294,14 @@
 	<key>Default Bookmark Guid</key>
 	<string>5CDA2599-2969-4A66-80EE-987A86DDA97F</string>
 	<key>DimBackgroundWindows</key>
-	<false/>
+	<true/>
 	<key>DimInactiveSplitPanes</key>
 	<true/>
 	<key>DimOnlyText</key>
 	<true/>
 	<key>DisableFullscreenTransparency</key>
+	<true/>
+	<key>DockIconTogglesWindow</key>
 	<true/>
 	<key>EnableRendezvous</key>
 	<false/>
@@ -5314,7 +5320,7 @@
 	<key>HideMenuBarInFullscreen</key>
 	<false/>
 	<key>HideScrollbar</key>
-	<false/>
+	<true/>
 	<key>HideTab</key>
 	<true/>
 	<key>HighlightTabLabels</key>
@@ -5331,6 +5337,8 @@
 	<integer>50</integer>
 	<key>HotkeyModifiers</key>
 	<integer>1048840</integer>
+	<key>HotkeyWindowFloatsAboveOtherWindows</key>
+	<true/>
 	<key>IRMemory</key>
 	<integer>4</integer>
 	<key>JobName</key>
@@ -5382,13 +5390,17 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>307 274 214 309 0 0 1440 878 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>905 318 445 77 0 0 1920 1057 </string>
+	<string>610 130 445 77 0 0 1440 877 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>834 421 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>767 697 400 129 0 0 1920 1057 </string>
+	<string>760 697 400 129 0 0 1920 1057 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 364 620 392 0 0 1440 877 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>269 139 606 456 0 0 1440 877 </string>
+	<key>NSWindow Frame SharedPreferences</key>
+	<string>273 139 918 512 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>155 473 592 584 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
@@ -5435,6 +5447,10 @@
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_82DB5E2C-64C2-4802-B731-E44A5DEE656B</key>
 	<true/>
+	<key>NeverWarnAboutShortLivedSessions_9143ED9A-9B57-4D05-A69C-440DBA5E9317</key>
+	<true/>
+	<key>NeverWarnAboutShortLivedSessions_9143ED9A-9B57-4D05-A69C-440DBA5E9317_selection</key>
+	<integer>0</integer>
 	<key>NeverWarnAboutShortLivedSessions_94A1E64F-68EE-4F97-A6DE-BA9A81A26E83</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_A2D78A8B-DB7F-4FE8-8BDB-537005CCFB21</key>
@@ -24310,6 +24326,8 @@
 			<string>LiterationMonoPowerline 11</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
+			<key>Prevent Opening in a Tab</key>
+			<true/>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -24486,6 +24504,8 @@
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
+	<key>NoSyncConfirmBeta</key>
+	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
 	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
@@ -24494,18 +24514,29 @@
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>FAF6735D-280B-45F9-B6E1-B63931281B87</string>
+	<key>NoSyncLastTipTime</key>
+	<real>487317167.27012902</real>
 	<key>NoSyncNeverRemindPrefsChangesCopy</key>
 	<true/>
 	<key>NoSyncPermissionToShowTip</key>
 	<false/>
 	<key>NoSyncSilenceAnnoyingBellAutomatically</key>
 	<true/>
+	<key>NoSyncSuppressBroadcastInputWarning</key>
+	<true/>
+	<key>NoSyncSuppressBroadcastInputWarning_selection</key>
+	<integer>0</integer>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>477582446.70730501</real>
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>477582392.69001102</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
 	<real>477582385.77626401</real>
+	<key>NoSyncTipsToNotShow</key>
+	<array>
+		<string>000</string>
+		<string>0000</string>
+	</array>
 	<key>NoSyncTurnOffMouseReportingOnHostChange</key>
 	<true/>
 	<key>OnlyWhenMoreTabs</key>
@@ -24574,11 +24605,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing3.xml?shard=87</string>
+	<string>https://iterm2.com/appcasts/testing.xml?shard=87</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-06-02T15:45:17Z</date>
+	<date>2016-08-23T19:29:28Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -24601,22 +24632,35 @@
 	<true/>
 	<key>SuppressShellIntegrationUpgradeAnnouncementForHost_ben.ohara@mgmt1.den.reg.neustar.com</key>
 	<true/>
+	<key>SuppressShellIntegrationUpgradeAnnouncementForHost_ben.ohara@mongodb1.ash.reg.neustar.com</key>
+	<true/>
+	<key>SuppressShellIntegrationUpgradeAnnouncementForHost_ben.ohara@netmon1.den.reg.neustar.com</key>
+	<true/>
 	<key>SwitchTabModifier</key>
 	<integer>4</integer>
 	<key>SwitchWindowModifier</key>
 	<integer>6</integer>
+	<key>TabStyle</key>
+	<integer>3</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>ThreeFingerEmulates</key>
 	<false/>
 	<key>TmuxDashboardLimit</key>
 	<integer>10</integer>
+	<key>ToolbeltTools</key>
+	<array>
+		<string>Jobs</string>
+		<string>Profiles</string>
+	</array>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
 	<key>UKCrashReporterLastCrashReportDate</key>
 	<real>1408492032</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
+	<key>Use background pattern indicator</key>
+	<true/>
 	<key>UseBorder</key>
 	<false/>
 	<key>UseCompactLabel</key>
@@ -25463,6 +25507,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20160523</string>
+	<string>3.0.5</string>
 </dict>
 </plist>

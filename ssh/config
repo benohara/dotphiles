@@ -11,7 +11,7 @@
 ForwardAgent yes
 #VisualHostKey yes
 HashKnownHosts no
-#ConnectTimeout 2
+ConnectTimeout 2
 SendEnv LC_TERM_PROGRAM LC_TERM_PROFILE
 Compression yes
 
@@ -43,11 +43,16 @@ Host jumpden
   User bohara
   ProxyCommand ssh -vvv -W ben.ohara@mgmt1.den.reg.neustar.com:%p nsrjump
 
-Host derevprvjmp1 derevprvjmp1.de.neustar.com jump.reg jump.reg.neustar.com nsrjump
+Host nsrjumpold
   User bohara
   IdentityFile ~/.ssh/id_rsa.work
+  Hostname derevprvjmp1.de.neustar.com
+  DynamicForward 4322
+
+Host nsrjump
   Hostname jump.reg.neustar.com
   DynamicForward 4322
+
 
 # Work machines
 Host *.reg.neustar.com *.den *.ash
