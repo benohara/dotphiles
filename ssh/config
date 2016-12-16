@@ -35,28 +35,21 @@ Host *.ring.nlnog.net
 
 Host jump
   HostName jump.arsrs.local
-  #PermitLocalCommand yes
-  #LocalCommand ssh -f %r@%h -o RemoteForward="10000 localhost:22" -o ForwardAgent=yes -p %p sshfs -p 10000 %u@localhost:%d/Projects Projects2
   DynamicForward 4321
 
-Host jumpden
-  User bohara
-  ProxyCommand ssh -vvv -W ben.ohara@mgmt1.den.reg.neustar.com:%p nsrjump
-
-Host nsrjumpold
-  User bohara
-  IdentityFile ~/.ssh/id_rsa.work
-  Hostname derevprvjmp1.de.neustar.com
-  DynamicForward 4322
+Host jumpmel
+  HostName jump.mel.arsrs.local
+Host jumpsyd
+  HostName jump.syd.arsrs.local
 
 Host nsrjump
   Hostname jump.reg.neustar.com
   DynamicForward 4322
 
-
-# Work machines
-Host *.reg.neustar.com *.den *.ash
-    User ben.ohara
+Host jumpash
+  Hostname jump.ash.reg.neustar.com
+Host jumpden
+  Hostname jump.den.reg.neustar.com
 
 # Default
 Host *

@@ -304,9 +304,9 @@ web-eu1.aws.arsrs.local         rsync=jump1.mel.arsrs.local  files=ssh/config:.s
 web-eu2.aws.arsrs.local         rsync=jump1.mel.arsrs.local  files=ssh/config:.ssh/config,ssh/master:.ssh/master,git/gitconfig.local
 web1.stag.arsrs.local           rsync=jump1.mel.arsrs.local  files=ssh/config:.ssh/config,ssh/master:.ssh/master,git/gitconfig.local
 cake1.office.arsrs.local        rsync=jump1.mel.arsrs.local  files=ssh/config:.ssh/config,ssh/master:.ssh/master,git/gitconfig.local
-credns1.mel.arsrs.local         rsync=jump1.mel.arsrs.local  files=ssh/config:.ssh/config,ssh/master:.ssh/master,git/gitconfig.local
-credns1.syd.arsrs.local         rsync=jump1.mel.arsrs.local  files=ssh/config:.ssh/config,ssh/master:.ssh/master,git/gitconfig.local
-credns1.stag.arsrs.local        rsync=jump1.mel.arsrs.local  files=ssh/config:.ssh/config,ssh/master:.ssh/master,git/gitconfig.local
+dns-validator1.mel.arsrs.local  rsync=jump1.mel.arsrs.local  files=ssh/config:.ssh/config,ssh/master:.ssh/master,git/gitconfig.local
+dns-validator1.syd.arsrs.local  rsync=jump1.mel.arsrs.local  files=ssh/config:.ssh/config,ssh/master:.ssh/master,git/gitconfig.local
+dns-validator1.stag.arsrs.local rsync=jump1.mel.arsrs.local  files=ssh/config:.ssh/config,ssh/master:.ssh/master,git/gitconfig.local
 build6.mel.arsrs.local          rsync=jump1.mel.arsrs.local  files=ssh/config:.ssh/config,ssh/master:.ssh/master,git/gitconfig.local
 build7.mel.arsrs.local          rsync=jump1.mel.arsrs.local  files=ssh/config:.ssh/config,ssh/master:.ssh/master,git/gitconfig.local
 jira1.mel.arsrs.local           rsync=jump1.mel.arsrs.local  files=ssh/config:.ssh/config,ssh/master:.ssh/master,git/gitconfig.local
