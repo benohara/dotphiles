@@ -1,1 +1,2 @@
 /Users/bohara	40
+/Users/bohara/puppetlabs-rsync	40

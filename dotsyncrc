@@ -159,6 +159,12 @@ dns3.tor.ardns.local            rsync=jump1.mel.arsrs.local  files=ssh/config:.s
 dns4.tor.ardns.local            rsync=jump1.mel.arsrs.local  files=ssh/config:.ssh/config,ssh/master:.ssh/master,git/gitconfig.local
 dns5.tor.ardns.local            rsync=jump1.mel.arsrs.local  files=ssh/config:.ssh/config,ssh/master:.ssh/master,git/gitconfig.local
 mgmt1.tor.ardns.local           rsync=jump1.mel.arsrs.local  files=ssh/config:.ssh/config,ssh/master:.ssh/master,git/gitconfig.local
+dns-validator1.stag.arsrs.local rsync=jump1.mel.arsrs.local  files=ssh/config:.ssh/config,ssh/master:.ssh/master,git/gitconfig.local
+dns-validator1.mel.arsrs.local  rsync=jump1.mel.arsrs.local  files=ssh/config:.ssh/config,ssh/master:.ssh/master,git/gitconfig.local
+dns-validator1.syd.arsrs.local  rsync=jump1.mel.arsrs.local  files=ssh/config:.ssh/config,ssh/master:.ssh/master,git/gitconfig.local
+dns-signer1.stag.arsrs.local    rsync=jump1.mel.arsrs.local  files=ssh/config:.ssh/config,ssh/master:.ssh/master,git/gitconfig.local
+dns-signer1.mel.arsrs.local     rsync=jump1.mel.arsrs.local  files=ssh/config:.ssh/config,ssh/master:.ssh/master,git/gitconfig.local
+dns-signer1.syd.arsrs.local     rsync=jump1.mel.arsrs.local  files=ssh/config:.ssh/config,ssh/master:.ssh/master,git/gitconfig.local
 stealth1.stag.arsrs.local       rsync=jump1.mel.arsrs.local  files=ssh/config:.ssh/config,ssh/master:.ssh/master,git/gitconfig.local
 stealth2.stag.arsrs.local       rsync=jump1.mel.arsrs.local  files=ssh/config:.ssh/config,ssh/master:.ssh/master,git/gitconfig.local
 ote-stealth1.mel.arsrs.local    rsync=jump1.mel.arsrs.local  files=ssh/config:.ssh/config,ssh/master:.ssh/master,git/gitconfig.local
