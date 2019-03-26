@@ -16,14 +16,17 @@ if has("user_commands")
   set rtp+=~/.vim/bundle/vundle/
   call vundle#rc()
   "let g:vundles=['general', 'git', 'hg', 'programming', 'completion', 'ruby', 'python', 'misc']
-  let g:vundles=['general', 'python', 'programming', 'git']
+  "let g:vundles=['general', 'python', 'programming', 'git']
+  let g:vundles=['general']
   "let g:neocomplcache_enable_at_startup = 1
   " Load 'vundles'
   source ~/.vim/vundles.vim
   " Add extra bundles here...
   Bundle 'benohara/cisco.vim'
-  Bundle 'justinmk/vim-sneak'
-  Bundle 'tpope/vim-dispatch'
+  "Bundle 'justinmk/vim-sneak'
+  "Bundle 'tpope/vim-dispatch'
+  Bundle 'chase/vim-ansible-yaml'
+  Bundle 'pearofducks/ansible-vim'
 endif
 
 " Customize to your needs...

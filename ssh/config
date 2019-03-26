@@ -26,15 +26,29 @@ Host localhost 127.0.0.1
     StrictHostKeyChecking no
     DynamicForward 5555
 
-# Work machines
-Host *.arsrs.local *.ardns.local *.ausregistry.com.au *.office *.ausregistrygroup.local desktop-vm *.vic.ausregistry.com.au *.stkildard.vic.ausregistry.com.au
-    User ben.ohara
-    IdentityFile ~/.ssh/id_rsa.work
+host mgmt.mel mgmt01.mel.as7551.net
+    Hostname mgmt01.mel.as7551.net
+    User ben.ohara@ad.as7551.net
+    ServerAliveCountMax 6
+    ServerAliveInterval 30
+    KeepAlive yes
+host mgmt.cbr mgmt01.cbr.as7551.net
+    Hostname mgmt01.cbr.as7551.net
+    User ben.ohara@ad.as7551.net
+    ServerAliveCountMax 6
+    ServerAliveInterval 30
+    KeepAlive yes
 
-# NLNOG Ring
-Host *.ring.nlnog.net
-    User ausregistry
-    IdentityFile ~/.ssh/id_rsa.work
+Host *.as7551.net
+    GSSAPIAuthentication yes
+    GSSAPIDelegateCredentials yes
+    User admin
+    ServerAliveCountMax 6
+    ServerAliveInterval 30
+    KeepAlive yes
+
+Host *.az.audns.net.au
+    User ben
 
 # Default
 Host *
@@ -44,6 +58,6 @@ Host *
     ServerAliveInterval 30
     KeepAlive yes
     ControlMaster auto
-    ControlPath ~/.ssh/master/%r@%h:%p
+    ControlPath ~/.ssh/master/%C
     ControlPersist 8h
 
